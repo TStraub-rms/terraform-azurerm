@@ -8,19 +8,19 @@
 ```
 go get github.com/mitchellh/gox
 ```
-2. Run build
+2. Run build from top level of project
 ```
-cd azurerm
 gox \
     -os="darwin linux" \
     -arch="386 amd64" \
     -parallel=4 \
-    -output "../bin/{{.OS}}_{{.Arch}}/terraform-provider-azurerm"
+    -rebuild \
+    -output "bin/{{.OS}}_{{.Arch}}/terraform-provider-azurerm"
 ```
 
 ## To Test
 1. Download latest terraform executable from their website and place the single `terraform` file in the test folder.
-2. Build this project and copy output to /test directory
+2. Build this project and copy proper OS/architecture output to /test directory
 3. Run 
 ```
 ./terraform plan
