@@ -1,18 +1,12 @@
-package azurerm
+package main
 
-import (
-	"strings"
+import "strings"
 
-	"github.com/hashicorp/terraform/helper/schema"
-)
-
-func Provider() *schema.Provider {
-	return &schema.Provider{
-		ResourcesMap: map[string]*schema.Resource{
-			"azurerm_simple_lb": resourceArmSimpleLb(),
-		},
-	}
-}
+// func Provider() *schema.Provider {
+// 	return &schema.Provider{
+// 		ResourcesMap: *azurerm.Provider.ResourcesMap,
+// 	}
+// }
 
 // azureRMNormalizeLocation is a function which normalises human-readable region/location
 // names (e.g. "West US") to the values used and returned by the Azure API (e.g. "westus").

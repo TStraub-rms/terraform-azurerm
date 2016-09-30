@@ -27,6 +27,6 @@ gox \
 ```
 
 ## References
-[Plugin Development](https://www.hashicorp.com/blog/terraform-custom-providers.htmlhttps://www.hashicorp.com/blog/terraform-custom-providers.html)
+[Plugin Development](https://www.hashicorp.com/blog/terraform-custom-providers.html)
 
 [gox cross platform build](https://github.com/hashicorp/terraform/blob/master/scripts/build.sh#L49)
